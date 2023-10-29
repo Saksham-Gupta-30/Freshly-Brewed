@@ -1,0 +1,168 @@
+@keyframes launch-dark {
+    0% {
+        transform: scale(1.1);
+        background: linear-gradient(99deg, #380D2C 0.87%, #4D173E 0.88%, #2B174D 97.78%);
+    }
+
+    33% {
+        transform: scale(0.9);
+        background: linear-gradient(99deg, #380D2C 0.87%, #4D173E 0.88%, #2B174D 97.78%);
+    }
+
+    66% {
+        transform: scale(1.05);
+        background: linear-gradient(99deg, #380D2C 0.87%, #4D173E 0.88%, #2B174D 97.78%);
+    }
+
+    100% {
+        transform: scale(1);
+        background: linear-gradient(99deg, #380D2C 0.87%, #4D173E 0.88%, #2B174D 97.78%);
+    }
+}
+
+@keyframes launch-light {
+    0% {
+        transform: scale(1.1);
+        background: linear-gradient(100deg, #E5B8D9 1%, #C9B8E5 100.1%);
+    }
+
+    33% {
+        transform: scale(0.9);
+        background: linear-gradient(100deg, #E5B8D9 1%, #C9B8E5 100.1%);
+    }
+
+    66% {
+        transform: scale(1.05);
+        background: linear-gradient(100deg, #E5B8D9 1%, #C9B8E5 100.1%);
+    }
+
+    100% {
+        transform: scale(1);
+        background: linear-gradient(100deg, #E5B8D9 1%, #C9B8E5 100.1%);
+    }
+}
+
+@keyframes confetti {
+    0% {
+        transform: translateY(0);
+        background: url(../assets/Confetti.gif) no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        transform: translateY(0);
+        background: url(../assets/Confetti.gif) no-repeat;
+        background-size: cover;
+    }
+}
+
+.confetti {
+    position: absolute;
+    height: 100vh;
+    width: 375px;
+    animation: confetti 3s 0s 1 ease-in-out;
+}
+
+.launch-div-dark {
+    display: flex;
+    /* width: 40%; */
+    padding: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 44px;
+    border-radius: 18px;
+    /* background: linear-gradient(99deg, #380D2C 0.87%, #4D173E 0.88%, #2B174D 97.78%); */
+    animation: launch-dark 500ms 1;
+}
+
+.launch-div-light {
+    display: flex;
+    /* width: 30%; */
+    padding: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 44px;
+    border-radius: 18px;
+    /* background: linear-gradient(100deg, #E5B8D9 1%, #C9B8E5 100.1%); */
+    animation: launch-light 500ms 1;
+}
+
+.launch-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.launch-header-title-dark {
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 64px */
+    background: linear-gradient(90deg, #FFF 0.11%, #CCC 98.77%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.launch-header-title-light {
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 64px */
+    background: linear-gradient(90deg, #0F0F0F 0.11%, #333 98.77%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.launch-header-description {
+    width: 429px;
+    /* color: #CCC; */
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 28.8px */
+}
+
+.launch-header-description span {
+    /* color: #FFF; */
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.launch-btn {
+    display: flex;
+    padding: 7.5px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    /* background: #FFF;
+    color: #0F0F0F; */
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 32px */
+}

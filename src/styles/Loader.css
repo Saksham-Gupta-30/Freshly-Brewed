@@ -1,0 +1,28 @@
+.light-load {
+    display: flex;
+    width: 21px;
+    height: 21px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.dark-load {
+    display: flex;
+    width: 21px;
+    height: 21px;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-loader {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+}
+
+.black-loader {
+    width: 60px;
+    height: 45px;
+    flex-shrink: 0;
+}
