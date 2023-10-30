@@ -1,10 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import '../styles/Launch.css'
 import { useTheme } from '../context'
 
 const Launch = () => {
     const { theme } = useTheme()
+    const navigate = useNavigate()
 
     return (
         <>
@@ -22,7 +24,7 @@ const Launch = () => {
                         Our new feature is now <span style={{ color: theme === 'light' ? '#0F0F0F' : '#FFF' }}>Live and ready</span> for you to explore. Go ahead and give it a try
                     </div>
                 </div>
-                <button className='launch-btn' style={{
+                <button className='launch-btn' onClick={() => navigate('/question-page')} style={{
                     background: theme === 'light' ? '#0F0F0F' : '#FFF',
                     color: theme === 'light' ? '#fff' : '#0F0F0F'
                 }}>

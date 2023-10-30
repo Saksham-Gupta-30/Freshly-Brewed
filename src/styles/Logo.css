@@ -1,0 +1,40 @@
+.logo {
+    display: flex;
+    width: 300px;
+    padding: 15px 0px;
+    justify-content: center;
+    align-items: center;
+    place-self: start;
+    gap: 6px;
+    position: absolute;
+    top: 0;
+}
+
+.logo-header-1 {
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+    /* 61.553% */
+    letter-spacing: 1.625px;
+}
+
+.logo-header-2 {
+    display: flex;
+    padding: 5px 2px;
+    justify-content: center;
+    align-items: center;
+    gap: 4.063px;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12.003px;
+    /* 61.553% */
+    letter-spacing: 1.625px;
+}
