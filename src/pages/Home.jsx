@@ -35,9 +35,10 @@ const Home = () => {
             <button className='theme-circle' onClick={toggleTheme} style={{
                 backgroundColor: theme === 'light' ? '#000' : '#FFF',
                 border: theme === 'light' ? '5px solid #fff' : '5px solid #000',
+                cursor: 'pointer'
             }}>
                 {theme === 'light' ? '🌙' : '☀️'}
-            </button>
+            </button> {/*Toggle theme button*/}
         </div >
     )
 }

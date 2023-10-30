@@ -4,10 +4,17 @@ import '../styles/Question-page.css'
 
 import { useTheme } from '../context'
 import { Logo } from '../components'
-import { User } from '../assets'
+import { Scroll, User } from '../assets'
 
 const Question = () => {
     const { theme, toggleTheme } = useTheme()
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
 
     return (
         <div className='question-page' style={{
@@ -20,12 +27,13 @@ const Question = () => {
                 <img src={User} alt="user" className='user' />
             </div>
             <Logo />
-            <div className='scroll'>
-                
-            </div>
+            <button className='scroll' onClick={scrollToTop}>
+                <img src={Scroll} alt="scroll" style={{ width: '67.5px', height: '67.5px' }} />
+            </button>
             <button className='theme-circle' onClick={toggleTheme} style={{
                 backgroundColor: theme === 'light' ? '#000' : '#FFF',
                 border: theme === 'light' ? '5px solid #fff' : '5px solid #000',
+                cursor: 'pointer'
             }}>
                 {theme === 'light' ? '🌙' : '☀️'}
             </button>

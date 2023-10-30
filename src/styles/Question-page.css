@@ -20,9 +20,9 @@
 
 .scroll {
     position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     bottom: 30px;
     right: 30px;
-    border: 5px solid rgba(217, 217, 217, 1);
-    width: 67.5px;
-    height: 67.5px;
 }

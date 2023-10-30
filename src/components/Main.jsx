@@ -11,9 +11,9 @@ const Main = ({ setLaunch }) => {
     const { theme } = useTheme()
     const [emails, setEmails] = useState([])
     const [email, setEmail] = useState('')
-    const [hours, setHours] = useState(0);
-    const [minutes, setMinutes] = useState(0);
-    const [seconds, setSeconds] = useState(0);
+    const [hours, setHours] = useState(null); // Set null to not show the Hours
+    const [minutes, setMinutes] = useState(1); // Set minutes
+    const [seconds, setSeconds] = useState(0); // Set seconds
     const [loading, setLoading] = useState(false)
     const [success, setSuccess] = useState(false)
     const [invalid, setInvalid] = useState(false)
